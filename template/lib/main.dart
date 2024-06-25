@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:template/OnboardingPage.dart';
+// import 'package:template/SignInPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,21 +10,34 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   static const String _title = 'Apsel App';
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Apsel App',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(
-              seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
-          useMaterial3: true,
+      title: 'Apsel App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4),
         ),
-        initialRoute: '/',
-        routes: {
-          '/': (context) => OnboardingPage(),
-          '/home': (context) => const MyHomePage(title: 'Apsel App'),
-        });
+        useMaterial3: true,
+      ),
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => const MyHomePage(title: 'Apsel App'),
+        '/onboard': (context) => OnboardingPage(),
+        // '/signin': (context) => SignInPage(),
+      },
+      onGenerateRoute: (settings) {
+        if (settings.name == '/home') {
+          return MaterialPageRoute(
+              builder: (context) => const MyHomePage(title: 'Apsel App'));
+        } else if (settings.name == '/onboard') {
+          return MaterialPageRoute(builder: (context) => OnboardingPage());
+        } //else if (settings.name == '/signin') {
+        //return MaterialPageRoute(builder: (context) => SignInPage());
+        //}
+        return null;
+      },
+    );
   }
 }
 
@@ -41,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: GestureDetector(
         onTap: () {
-          Navigator.pushReplacementNamed(context, '/');
+          Navigator.pushNamed(context, '/onboard');
         },
         child: Container(
           decoration: const BoxDecoration(
@@ -52,8 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           child: Center(
-            // Center is a layout widget. It takes a single child and positions it
-            // in the middle of the parent.
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
