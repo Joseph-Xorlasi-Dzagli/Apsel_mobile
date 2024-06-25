@@ -13,18 +13,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Apsel App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
-        useMaterial3: true,
-      ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => OnboardingPage(),
-        '/home': (context) => const MyHomePage(title: 'Apsel App'),
-      },
-    );
+        title: 'Apsel App',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
+          useMaterial3: true,
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => OnboardingPage(),
+          '/home': (context) => const MyHomePage(title: 'Apsel App'),
+        });
   }
 }
 
