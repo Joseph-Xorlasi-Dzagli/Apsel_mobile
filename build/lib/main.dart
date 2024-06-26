@@ -3,6 +3,8 @@ import 'package:template/OnboardingPage.dart';
 import 'package:template/screens/signUp.dart';
 import 'package:template/screens/editBusinessProfile.dart';
 import 'package:template/screens/editBusinessAddress.dart';
+import 'package:template/screens/AddPaymentAccount.dart';
+
 
 
 
@@ -31,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/signUp': (context) => const SignUpPage(),
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
         '/editBusinessAddress': (context) =>  EditBusinessAddress(),
+        '/addPaymentAccount': (context) =>  AddPaymentAccount(),
       },
     );
   }
