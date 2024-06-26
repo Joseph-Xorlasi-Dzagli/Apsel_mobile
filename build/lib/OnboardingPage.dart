@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatelessWidget {
+  const OnboardingPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +28,7 @@ class OnboardingPage extends StatelessWidget {
                       width: 200, // adjust the size as needed
                     ),
                   ),
+<<<<<<< Updated upstream
                   SizedBox(height: 10),
                   // Your tagline
                   Text(
@@ -44,11 +47,35 @@ class OnboardingPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4),
                       minimumSize: Size(300, 65), // Adjust the width and height here
+=======
+                  const SizedBox(height: 10),
+                  // Your tagline
+                  const Text(
+                    'Drive sales and manage your store',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 24), // adjust the button position
+                  // Get Started button
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/editBusinessAddress');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4),
+                      minimumSize: const Size(300, 65), // Adjust the width and height here
+>>>>>>> Stashed changes
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10), // Adjust the rounding of the corners here
                       ),
                     ),
+<<<<<<< Updated upstream
                     child: Text(
+=======
+                    child: const Text(
+>>>>>>> Stashed changes
                       'Get Started',
                       style: TextStyle(fontSize: 16, color: Colors.white),
                     ),
@@ -57,7 +84,11 @@ class OnboardingPage extends StatelessWidget {
               ),
             ),
           )
+<<<<<<< Updated upstream
           ,
+=======
+
+>>>>>>> Stashed changes
         ],
       ),
     );
