@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AccountScreen extends StatelessWidget {
-  const AccountScreen({Key? key}) : super(key: key);
+  const AccountScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +21,18 @@ class AccountScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
+              const Padding(
+                padding: EdgeInsets.all(16.0),
                 child: Center(
                   child: Column(
                     children: [
                       CircleAvatar(
                         radius: 40,
                         backgroundColor: Color(0xFFB9EEF4), // Light blue color
-                        child: const Icon(Icons.person, size: 40, color: Colors.grey),
+                        child: Icon(Icons.person, size: 40, color: Colors.grey),
                       ),
-                      const SizedBox(height: 16),
-                      const Text(
+                      SizedBox(height: 16),
+                      Text(
                         'G-Connect Mobile Accessories',
                         style: TextStyle(
                           fontSize: 18,
@@ -54,14 +54,14 @@ class AccountScreen extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
-                      Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
+                      const Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
+                      const Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
                     ],
                   ),
                   borderRadius: BorderRadius.circular(12.0), // Optional: Adds rounded corners
                   boxShadow: [
                     BoxShadow(
-                      color: Color(0xFFB9EEF4).withOpacity(0.5),
+                      color: const Color(0xFFB9EEF4).withOpacity(0.5),
                       spreadRadius: 5,
                       blurRadius: 7,
                       offset: const Offset(0, 3), // changes position of shadow
@@ -86,14 +86,14 @@ class AccountScreen extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
-                        Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
+                        const Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
+                        const Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
                       ],
                     ),
                     borderRadius: BorderRadius.circular(12.0), // Optional: Adds rounded corners
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0xFFB9EEF4).withOpacity(0.5),
+                        color: const Color(0xFFB9EEF4).withOpacity(0.5),
                         spreadRadius: 5,
                         blurRadius: 7,
                         offset: const Offset(0, 3), // changes position of shadow
@@ -125,14 +125,14 @@ class AccountScreen extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
-                      Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
+                      const Color(0xFFB9EEF4).withOpacity(0.7), // Very light blue gradient start
+                      const Color(0xFFB9EEF4).withOpacity(0.5), // Very light blue gradient end
                     ],
                   ),
                   borderRadius: BorderRadius.circular(12.0), // Optional: Adds rounded corners
                   boxShadow: [
                     BoxShadow(
-                      color: Color(0xFFB9EEF4).withOpacity(0.5),
+                      color: const Color(0xFFB9EEF4).withOpacity(0.5),
                       spreadRadius: 5,
                       blurRadius: 7,
                       offset: const Offset(0, 3), // changes position of shadow
@@ -154,7 +154,7 @@ class AccountScreen extends StatelessWidget {
       leading: Container(
         width: 50,
         height: 50,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: Colors.white,
         ),
@@ -166,7 +166,7 @@ class AccountScreen extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: TextStyle(fontSize: 16),
+        style: const TextStyle(fontSize: 16),
       ),
       onTap: () {
         Navigator.pushNamed(context, routeName);
