@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:template/OnboardingPage.dart';
-<<<<<<< Updated upstream
-import 'package:template/SignIn.dart';
-=======
 import 'package:template/screens/signUp.dart';
 import 'package:template/screens/editBusinessProfile.dart';
 import 'package:template/screens/editBusinessAddress.dart';
->>>>>>> Stashed changes
 
 
 
@@ -29,15 +25,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const AccountScreen(),
-<<<<<<< Updated upstream
-      initialRoute: '/',
-      routes: {
-        '/': (context) => OnboardingPage(),
-        '/signIn': (context) => SignInPage(),
-=======
       routes: {
         '/': (context) => const OnboardingPage(),
->>>>>>> Stashed changes
         '/home': (context) => const MyHomePage(title: 'Apsel App'),
         '/signUp': (context) => const SignUpPage(),
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
@@ -75,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/Apsel Logo.png', width: 200),
+                Image.asset('assets/Apsel Logo.png', height: 100),
                 const SizedBox(height: 20),
                 const Text(
                   'Drive sales and manage your store',
