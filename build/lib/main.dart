@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'account.dart';
 import 'package:template/OnboardingPage.dart';
+import 'package:template/SignIn.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +23,11 @@ class MyApp extends StatelessWidget {
             seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
         useMaterial3: true,
       ),
-      home: const AccountScreen(),
+      // home: const AccountScreen(),
       initialRoute: '/',
       routes: {
         '/': (context) => OnboardingPage(),
+        '/signIn': (context) => SignInPage(),
         '/home': (context) => const MyHomePage(title: 'Apsel App'),
       },
     );
@@ -60,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/Apsel Logo.png', height: 100),
+                Image.asset('assets/Apsel Logo.png', width: 200),
                 const SizedBox(height: 20),
                 const SizedBox(height: 10),
                 const Text(
