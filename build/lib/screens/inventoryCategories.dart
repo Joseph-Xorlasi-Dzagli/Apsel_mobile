@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CategoryPage extends StatelessWidget {
+class InventoryCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

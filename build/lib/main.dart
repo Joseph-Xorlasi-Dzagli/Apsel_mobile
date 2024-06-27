@@ -13,6 +13,9 @@ import 'package:template/screens/addProduct.dart';
 import 'package:template/screens/messages.dart';
 import 'package:template/screens/profile.dart';
 import 'package:template/screens/paymentAccounts.dart';
+import 'package:template/screens/inventoryProducts.dart';
+import 'package:template/screens/product.dart';
+import 'package:template/screens/inventoryCategories.dart';
 import 'package:template/screens/scratch.dart';
 
 
@@ -47,13 +50,16 @@ class MyApp extends StatelessWidget {
         '/editPaymentAccount': (context) =>  EditPaymentAccount(),
         '/addSocialMediaAccount': (context) =>  AddSocialMediaAccount(),
         '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
-        '/account': (context) =>  AccountScreen(),
+        '/account': (context) =>  const AccountScreen(),
         '/chat': (context) =>  ChatPage(),
         '/addProduct': (context) =>  AddProduct(),
         '/messages': (context) =>  Messages(),
         '/profile': (context) =>  Profile(),
         '/paymentAccounts': (context) =>  PaymentAccounts(),
-        '/scratch': (context) =>  PaymentAccountsPage(),
+        '/inventory': (context) =>  Inventory(),
+        '/product': (context) =>  Product(),
+        '/inventoryCategories': (context) =>  InventoryCategories(),
+        '/scratch': (context) =>  CategoryPage(),
       },
     );
   }
