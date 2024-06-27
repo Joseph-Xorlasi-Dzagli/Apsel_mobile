@@ -8,6 +8,11 @@ import 'package:template/screens/editPaymentAccount.dart';
 import 'package:template/screens/addSocialMediaAccount.dart';
 import 'package:template/screens/editSocialMediaAccount.dart';
 import 'package:template/screens/account.dart';
+import 'package:template/screens/chat.dart';
+import 'package:template/screens/addProduct.dart';
+import 'package:template/screens/messages.dart';
+import 'package:template/screens/profile.dart';
+import 'package:template/screens/scratch.dart';
 
 
 
@@ -42,7 +47,11 @@ class MyApp extends StatelessWidget {
         '/addSocialMediaAccount': (context) =>  AddSocialMediaAccount(),
         '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
         '/account': (context) =>  AccountScreen(),
-
+        '/chat': (context) =>  ChatPage(),
+        '/addProduct': (context) =>  AddProduct(),
+        '/messages': (context) =>  Messages(),
+        '/profile': (context) =>  Profile(),
+        '/scratch': (context) =>  NotificationPage(),
       },
     );
   }
