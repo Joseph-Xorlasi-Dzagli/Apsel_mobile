@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AccountScreen extends StatelessWidget {
-  const AccountScreen({super.key});
+  const AccountScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,28 +21,29 @@ class AccountScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Center(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 40,
-                        backgroundColor: Color(0xFFB9EEF4), // Light blue color
-                        child: Icon(Icons.person, size: 40, color: Colors.grey),
-                      ),
-                      SizedBox(height: 16),
-                      Text(
-                        'G-Connect Mobile Accessories',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundColor: Color(0xFFB9EEF4), // Light blue color
+                    child: Icon(Icons.person, size: 40, color: Colors.grey),
                   ),
-                ),
+                  SizedBox(width: 16),
+                  Expanded(
+                    child: Text(
+                      'G-Connect MobileMobileMobileMobileMobileMobileMobileMobileMobile Accessories',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 10),
               // Light Blue Gradient Container for Business Profile and Business Validation
