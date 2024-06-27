@@ -12,6 +12,7 @@ import 'package:template/screens/chat.dart';
 import 'package:template/screens/addProduct.dart';
 import 'package:template/screens/messages.dart';
 import 'package:template/screens/profile.dart';
+import 'package:template/screens/paymentAccounts.dart';
 import 'package:template/screens/scratch.dart';
 
 
@@ -51,7 +52,8 @@ class MyApp extends StatelessWidget {
         '/addProduct': (context) =>  AddProduct(),
         '/messages': (context) =>  Messages(),
         '/profile': (context) =>  Profile(),
-        '/scratch': (context) =>  NotificationPage(),
+        '/paymentAccounts': (context) =>  PaymentAccounts(),
+        '/scratch': (context) =>  PaymentAccountsPage(),
       },
     );
   }
