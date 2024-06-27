@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Inventory extends StatefulWidget {
+class InventoryProducts extends StatefulWidget {
   @override
   _InventoryPageState createState() => _InventoryPageState();
 }
 
-class _InventoryPageState extends State<Inventory> {
+class _InventoryPageState extends State<InventoryProducts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

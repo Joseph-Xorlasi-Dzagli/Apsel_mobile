@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BusinessValidationPage extends StatelessWidget {
+class BusinessValidation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -157,10 +157,4 @@ class BusinessValidationPage extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: BusinessValidationPage(),
-  ));
 }

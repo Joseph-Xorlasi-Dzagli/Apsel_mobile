@@ -16,6 +16,8 @@ import 'package:template/screens/paymentAccounts.dart';
 import 'package:template/screens/inventoryProducts.dart';
 import 'package:template/screens/product.dart';
 import 'package:template/screens/inventoryCategories.dart';
+import 'package:template/screens/inventoryProducts.dart';
+import 'package:template/screens/businessValidation.dart';
 import 'package:template/screens/scratch.dart';
 
 
@@ -39,9 +41,9 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
         useMaterial3: true,
       ),
-      // home: const AccountScreen(),
       routes: {
-        '/': (context) => const OnboardingPage(),
+        // '/': (context) => const OnboardingPage(),
+        '/': (context) => BusinessValidation(),
         '/home': (context) => const MyHomePage(title: 'Apsel App'),
         '/signUp': (context) => const SignUpPage(),
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
@@ -56,10 +58,11 @@ class MyApp extends StatelessWidget {
         '/messages': (context) =>  Messages(),
         '/profile': (context) =>  Profile(),
         '/paymentAccounts': (context) =>  PaymentAccounts(),
-        '/inventory': (context) =>  Inventory(),
         '/product': (context) =>  Product(),
         '/inventoryCategories': (context) =>  InventoryCategories(),
-        '/scratch': (context) =>  CategoryPage(),
+        '/inventoryProducts': (context) =>  InventoryProducts(),
+        '/businessValidation': (context) =>  BusinessValidation(),
+        '/scratch': (context) =>  BusinessValidationPage(),
       },
     );
   }
