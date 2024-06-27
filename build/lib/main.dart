@@ -7,6 +7,7 @@ import 'package:template/screens/addPaymentAccount.dart';
 import 'package:template/screens/editPaymentAccount.dart';
 import 'package:template/screens/addSocialMediaAccount.dart';
 import 'package:template/screens/editSocialMediaAccount.dart';
+import 'package:template/screens/account.dart';
 
 
 
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/editPaymentAccount': (context) =>  EditPaymentAccount(),
         '/addSocialMediaAccount': (context) =>  AddSocialMediaAccount(),
         '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
+        '/account': (context) =>  AccountScreen(),
 
       },
     );

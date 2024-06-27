@@ -42,7 +42,7 @@ class OnboardingPage extends StatelessWidget {
                   // Get Started button
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/editSocialMediaAccount');
+                      Navigator.pushReplacementNamed(context, '/account');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4),
