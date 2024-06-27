@@ -1,5 +1,8 @@
+import 'package:apsel/screens/mobileNumber.dart';
 import 'package:apsel/screens/signIn.dart';
+import 'package:apsel/screens/verifyMobile.dart';
 import 'package:apsel/screens/welcome.dart';
+import 'package:apsel/screens/welcomeScreen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.dark,
-      home: MyAppHome(),
+      home: VerifyMobile(),
     );
   }
 }

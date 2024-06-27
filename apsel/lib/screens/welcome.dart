@@ -23,7 +23,7 @@ class Welcome extends StatelessWidget {
             Text("Drive sales and manage your store"),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white, backgroundColor: Colors.blue, // Text color
+                  foregroundColor: Colors.white, backgroundColor: Colors.blue,
                   padding: EdgeInsets.symmetric(horizontal: 55, vertical: 20,),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
