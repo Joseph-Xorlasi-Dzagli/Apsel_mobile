@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SocialMediaAccountsScreen extends StatelessWidget {
+class SocialMediaAccounts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

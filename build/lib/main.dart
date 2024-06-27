@@ -6,6 +6,7 @@ import 'package:template/screens/editBusinessAddress.dart';
 import 'package:template/screens/addPaymentAccount.dart';
 import 'package:template/screens/editPaymentAccount.dart';
 import 'package:template/screens/addSocialMediaAccount.dart';
+import 'package:template/screens/socialMediaAccounts.dart';
 import 'package:template/screens/editSocialMediaAccount.dart';
 import 'package:template/screens/account.dart';
 import 'package:template/screens/chat.dart';
@@ -16,7 +17,6 @@ import 'package:template/screens/paymentAccounts.dart';
 import 'package:template/screens/inventoryProducts.dart';
 import 'package:template/screens/product.dart';
 import 'package:template/screens/inventoryCategories.dart';
-import 'package:template/screens/inventoryProducts.dart';
 import 'package:template/screens/businessValidation.dart';
 import 'package:template/screens/scratch.dart';
 
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         // '/': (context) => const OnboardingPage(),
-        '/': (context) => BusinessValidation(),
+        '/': (context) => SocialMediaAccounts(),
         '/home': (context) => const MyHomePage(title: 'Apsel App'),
         '/signUp': (context) => const SignUpPage(),
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
         '/addPaymentAccount': (context) =>  AddPaymentAccount(),
         '/editPaymentAccount': (context) =>  EditPaymentAccount(),
         '/addSocialMediaAccount': (context) =>  AddSocialMediaAccount(),
+        '/socialMediaAccount': (context) =>  SocialMediaAccounts(),
         '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
         '/account': (context) =>  const AccountScreen(),
         '/chat': (context) =>  ChatPage(),
