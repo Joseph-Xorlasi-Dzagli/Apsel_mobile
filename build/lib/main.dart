@@ -3,7 +3,10 @@ import 'package:template/OnboardingPage.dart';
 import 'package:template/screens/signUp.dart';
 import 'package:template/screens/editBusinessProfile.dart';
 import 'package:template/screens/editBusinessAddress.dart';
-import 'package:template/screens/AddPaymentAccount.dart';
+import 'package:template/screens/addPaymentAccount.dart';
+import 'package:template/screens/editPaymentAccount.dart';
+import 'package:template/screens/addSocialMediaAccount.dart';
+import 'package:template/screens/editSocialMediaAccount.dart';
 
 
 
@@ -34,6 +37,10 @@ class MyApp extends StatelessWidget {
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
         '/editBusinessAddress': (context) =>  EditBusinessAddress(),
         '/addPaymentAccount': (context) =>  AddPaymentAccount(),
+        '/editPaymentAccount': (context) =>  EditPaymentAccount(),
+        '/addSocialMediaAccount': (context) =>  AddSocialMediaAccount(),
+        '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
+
       },
     );
   }
