@@ -8,6 +8,12 @@ class SocialMediaAccounts extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.grey[700]),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
         title: Text(
           'Social Media Accounts',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
@@ -30,44 +36,74 @@ class SocialMediaAccounts extends StatelessWidget {
         padding: EdgeInsets.all(16.0),
         child: Column(
           children: [
+            SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildSocialMediaIcon(
-                  imageUrl:
-                  'https://placehold.co/40x40/25D366/FFFFFF/png?text=W',
-                  label: 'WhatsApp',
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/whatsapp.png',
+                      width: 74,
+                    ),
+                    SizedBox(height: 5), // Adjust spacing between image and label
+                    Text('WhatsApp'),
+                  ],
                 ),
-                _buildSocialMediaIcon(
-                  imageUrl:
-                  'https://placehold.co/40x40/E1306C/FFFFFF/png?text=I',
-                  label: 'Instagram',
+                SizedBox(width: 20),
+
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/insta.png',
+                      width: 74,
+                    ),
+                    SizedBox(height: 5), // Adjust spacing between image and label
+                    Text('Instagram'),
+                  ],
                 ),
-                _buildSocialMediaIcon(
-                  imageUrl:
-                  'https://placehold.co/40x40/FFFC00/FFFFFF/png?text=S',
-                  label: 'Snapchat',
-                  hasCheckMark: true,
+                SizedBox(width: 20),
+
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/snap.png',
+                      width: 74,
+                    ),
+                    SizedBox(height: 5), // Adjust spacing between image and label
+                    Text('Snapchat'),
+                  ],
                 ),
-                _buildSocialMediaIcon(
-                  imageUrl:
-                  'https://placehold.co/40x40/000000/FFFFFF/png?text=T',
-                  label: 'TikTok',
+                SizedBox(width: 20),
+
+
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/tiktok.png',
+                      width: 74,
+                    ),
+                    SizedBox(height: 5), // Adjust spacing between image and label
+                    Text('Tik Tok'),
+                  ],
                 ),
+                SizedBox(width: 20),
               ],
             ),
             SizedBox(height: 16),
+
+
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(35.0),
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
                 children: [
-                  _buildLargeSocialMediaIcon(
-                    imageUrl:
-                    'https://placehold.co/40x40/FFFC00/FFFFFF/png?text=S',
+                  Image.asset(
+                    'assets/snap.png',
+                    width: 120,
                   ),
                   SizedBox(height: 16),
                   Text(
@@ -79,27 +115,31 @@ class SocialMediaAccounts extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'You can add a Snapchat account to use our service ☹️.',
+                    'You can add a Snapchat account \n to use our service ai.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.grey[600],
                     ),
                   ),
                   SizedBox(height: 16),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      // Add new account action
-                    },
-                    icon: Icon(Icons.add),
-                    label: Text('ADD NEW'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.cyan[500],
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                    ),
-                  ),
                 ],
+              ),
+            ),
+            SizedBox(height: 10),
+
+            ElevatedButton.icon(
+              onPressed: () {
+                // Add new account action
+              },
+              icon: Icon(Icons.add),
+              label: Text('ADD NEW'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white, //cyan[500],
+                minimumSize: Size(310,50),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  side: BorderSide(color: Colors.grey, width: 1),
+                ),
               ),
             ),
           ],
@@ -107,6 +147,17 @@ class SocialMediaAccounts extends StatelessWidget {
       ),
     );
   }
+
+
+
+
+
+
+
+
+
+
+
 
   Widget _buildSocialMediaIcon({
     required String imageUrl,
