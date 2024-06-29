@@ -1,8 +1,12 @@
-import 'package:apsel/screens/mobileNumber.dart';
-import 'package:apsel/screens/signIn.dart';
-import 'package:apsel/screens/verifyMobile.dart';
-import 'package:apsel/screens/welcome.dart';
-import 'package:apsel/screens/welcomeScreen.dart';
+import 'package:apsel/screens/InventoryPages/addProduct.dart';
+import 'package:apsel/screens/InventoryPages/productPage.dart';
+import 'package:apsel/screens/OnboardingPages/logIn.dart';
+import 'package:apsel/screens/OnboardingPages/mobileNumber.dart';
+import 'package:apsel/screens/OnboardingPages/setUserLocation.dart';
+import 'package:apsel/screens/OnboardingPages/signUp.dart';
+import 'package:apsel/screens/OnboardingPages/verifyMobile.dart';
+import 'package:apsel/screens/OnboardingPages/welcome.dart';
+import 'package:apsel/screens/OnboardingPages/welcomeScreen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.dark,
-      home: VerifyMobile(),
+      home: AddProduct(),
     );
   }
 }
