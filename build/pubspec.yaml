@@ -55,6 +55,16 @@ flutter:
   assets:
     - assets/Apsel Logo.png
     - assets/onboard.png
+    - assets/Card.png
+    - assets/permit.png
+    - assets/cert.png
+    - assets/certificate.png
+    - assets/whatsapp.png
+    - assets/insta.png
+    - assets/snap.png
+    - assets/tiktok.png
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
