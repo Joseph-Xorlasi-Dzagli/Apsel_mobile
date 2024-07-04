@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:template/OnboardingPage.dart';
-import 'package:template/screens/signUp.dart';
+// import 'package:template/screens/signUp.dart';
 import 'package:template/screens/editBusinessProfile.dart';
 import 'package:template/screens/editBusinessAddress.dart';
 import 'package:template/screens/addPaymentAccount.dart';
@@ -10,7 +10,7 @@ import 'package:template/screens/socialMediaAccounts.dart';
 import 'package:template/screens/editSocialMediaAccount.dart';
 import 'package:template/screens/account.dart';
 import 'package:template/screens/chat.dart';
-import 'package:template/screens/addProduct.dart';
+// import 'package:template/screens/addProduct.dart';
 import 'package:template/screens/messages.dart';
 import 'package:template/screens/profile.dart';
 import 'package:template/screens/paymentAccounts.dart';
@@ -19,6 +19,27 @@ import 'package:template/screens/product.dart';
 import 'package:template/screens/inventoryCategories.dart';
 import 'package:template/screens/businessValidation.dart';
 import 'package:template/screens/scratch.dart';
+import 'package:template/screens/InventoryPages/addCategoryPage.dart';
+import 'package:template/screens/InventoryPages/addProduct.dart';
+import 'package:template/screens/InventoryPages/editAddProduct.dart';
+import 'package:template/screens/InventoryPages/editAddProductConti.dart';
+import 'package:template/screens/InventoryPages/finalEditProduct.dart';
+import 'package:template/screens/InventoryPages/productCategories.dart';
+import 'package:template/screens/InventoryPages/productPage.dart';
+import 'package:template/screens/OnboardingPages/forgetPassword.dart';
+import 'package:template/screens/OnboardingPages/logIn.dart';
+import 'package:template/screens/OnboardingPages/mobileNumber.dart';
+import 'package:template/screens/OnboardingPages/otpPage.dart';
+import 'package:template/screens/OnboardingPages/setUserLocation.dart';
+import 'package:template/screens/OnboardingPages/signUp.dart';
+import 'package:template/screens/OnboardingPages/verifyMobile.dart';
+import 'package:template/screens/OnboardingPages/welcome.dart';
+import 'package:template/screens/OnboardingPages/welcomeScreen.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+// import 'category_provider.dart';
+import 'package:flutter/material.dart';
+
 
 
 
@@ -29,13 +50,13 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  static const String _title = 'Apsel App';
+  static const String _title = 'template App';
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Apsel App',
+      title: 'template App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
@@ -43,9 +64,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         // '/': (context) => const OnboardingPage(),
-        '/': (context) => SocialMediaAccounts(),
-        '/home': (context) => const MyHomePage(title: 'Apsel App'),
-        '/signUp': (context) => const SignUpPage(),
+        '/': (context) =>  BrowsePages(),
+        '/home': (context) => const MyHomePage(title: 'template App'),
+        // '/signUp': (context) => const SignUpPage(),
         '/editBusinessProfile': (context) =>  EditBusinessProfile(),
         '/editBusinessAddress': (context) =>  EditBusinessAddress(),
         '/addPaymentAccount': (context) =>  AddPaymentAccount(),
@@ -55,7 +76,7 @@ class MyApp extends StatelessWidget {
         '/editSocialMediaAccount': (context) =>  EditSocialMediaAccount(),
         '/account': (context) =>  const AccountScreen(),
         '/chat': (context) =>  ChatPage(),
-        '/addProduct': (context) =>  AddProduct(),
+        // '/addProduct': (context) =>  AddProduct(),
         '/messages': (context) =>  Messages(),
         '/profile': (context) =>  Profile(),
         '/paymentAccounts': (context) =>  PaymentAccounts(),
@@ -97,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/Apsel Logo.png', height: 100),
+                Image.asset('assets/template Logo.png', height: 100),
                 const SizedBox(height: 20),
                 const Text(
                   'Drive sales and manage your store',
