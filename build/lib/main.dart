@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'account.dart';
 import 'package:template/OnboardingPage.dart';
+<<<<<<< HEAD
 // import 'package:template/screens/signUp.dart';
 import 'package:template/screens/editBusinessProfile.dart';
 import 'package:template/screens/editBusinessAddress.dart';
@@ -43,6 +45,8 @@ import 'package:flutter/material.dart';
 
 
 
+=======
+>>>>>>> parent of a7f5059 (Merge branch 'main' into onboarding)
 
 void main() {
   runApp(const MyApp());
@@ -59,10 +63,13 @@ class MyApp extends StatelessWidget {
       title: 'template App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
+            seedColor: Color.fromARGB(0xFF, 0x00, 0xAB, 0xC4)),
         useMaterial3: true,
       ),
+      home: const AccountScreen(),
+      initialRoute: '/',
       routes: {
+<<<<<<< HEAD
         // '/': (context) => const OnboardingPage(),
         '/': (context) =>  BrowsePages(),
         '/home': (context) => const MyHomePage(title: 'template App'),
@@ -85,6 +92,10 @@ class MyApp extends StatelessWidget {
         '/inventoryProducts': (context) =>  InventoryProducts(),
         '/businessValidation': (context) =>  BusinessValidation(),
         '/scratch': (context) =>  BusinessValidationPage(),
+=======
+        '/': (context) => OnboardingPage(),
+        '/home': (context) => const MyHomePage(title: 'Apsel App'),
+>>>>>>> parent of a7f5059 (Merge branch 'main' into onboarding)
       },
     );
   }
@@ -115,11 +126,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           child: Center(
+            // Center is a layout widget. It takes a single child and positions it
+            // in the middle of the parent.
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset('assets/template Logo.png', height: 100),
                 const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 const Text(
                   'Drive sales and manage your store',
                   style: TextStyle(
