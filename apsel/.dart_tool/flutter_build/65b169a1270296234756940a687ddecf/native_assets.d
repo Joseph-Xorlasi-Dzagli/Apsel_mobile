@@ -1,0 +1,1 @@
+ C:\\Dev\\GitHub\\Apsel_mobile\\apsel\\.dart_tool\\flutter_build\\65b169a1270296234756940a687ddecf\\native_assets.yaml: 
